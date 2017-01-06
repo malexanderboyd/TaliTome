@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { Page1 } from '../page1/page1';
 import { NavController, NavParams } from 'ionic-angular';
+import { Characters } from '../characters/characters';
+import { Cards } from '../cards/cards';
+import { Tools } from '../tools/tools';
 
 @Component({
-  selector: 'page-page2',
-  templateUrl: 'page2.html'
+  selector: 'page-home',
+  templateUrl: 'home.html'
 })
-export class Page2 {
+export class Home {
   selectedItem: any;
   title: string[];
   items: Array<{title: string}>;
@@ -28,8 +30,28 @@ export class Page2 {
 
   itemTapped(event, item) {
     // That's right, we're pushing to ourselves!
-    this.navCtrl.push(Page1, {
-      item: item
-    });
+    console.log(item.title);
+    var choice = new String(item.title).toString();
+    switch (choice)
+    {
+
+    case "Characters":
+      this.navCtrl.push(Characters);
+      break;
+    case "Cards":
+      this.navCtrl.push(Cards);
+      break;
+
+    case "Tools":
+      this.navCtrl.push(Tools);
+      break;
+
+    default:
+      console.log(choice);
+      break;
+    }
+    //this.navCtrl.push(ttt, {
+      //item: item
+    //});
   }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "TaliTome",
+  "author": "M. Alex Boyd",
+  "homepage": "http://malexboyd.me",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -39,5 +39,5 @@
     "cordova-plugin-splashscreen"
   ],
   "cordovaPlatforms": [],
-  "description": "TaliTome: An Ionic project"
+  "description": "TaliTome: A guide for Talisman."
 }

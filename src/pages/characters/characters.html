@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Characters</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Talisman Characters</h3>
+  <div *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <div class="nav-card-square mdl-card mdl-shadow--2dp">
+      <div class=" mdl-card__title mdl-card--expand"></div>
+       <div class="mdl-card__actions mdl-card--border">
+         <p class="card-title">
+          {{item.character.getName()}}
+         </p>
+       </div>
+     </div>
+   <br/><br/>
+  </div>
+</ion-content>
