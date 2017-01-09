@@ -11,12 +11,24 @@
   <h3>Talisman Characters</h3>
   <div *ngFor="let item of items" (click)="itemTapped($event, item)">
       <div class="nav-card-square mdl-card mdl-shadow--2dp">
-      <div class=" mdl-card__title mdl-card--expand"></div>
-       <div class="mdl-card__actions mdl-card--border">
-         <p class="card-title">
-          {{item.character.getName()}}
-         </p>
-       </div>
+      <div class="mdl-card--expand" style="width:100%;">
+        <div id="cardContent">
+        <div class="mdl-cell mdl-cell--3-col charDetails">
+        <img class="charIcon" src={{item.character.getImgPath()}}/>
+        </div>
+        <div class="mdl-cell mdl-cell--3-col charDetails">
+        Strength: {{ item.character.getStr()}} <br/>
+
+        Fate: {{ item.character.getFate()}}
+        </div>
+        <div class="mdl-cell mdl-cell--3-col charDetails">
+        Craft: {{ item.character.getCraft()}}
+        </div>
+      </div> <!-- end of card content -->
+  </div> <!-- end of mdl-card title"> -->
+      <div class="mdl-card__actions mdl-card--border">
+        <p class="card-title">{{item.character.getName()}}</p>
+      </div>
      </div>
    <br/><br/>
   </div>

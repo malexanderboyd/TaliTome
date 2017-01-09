@@ -47,17 +47,10 @@ export class Characters {
 
     this.items = [];
     for (let i = 0; i < this.characters.length; i++) {
-      this.setupItems(this.items, this.characters[i]);
-
+    this.items.push({
+      character : this.characters[i],
+      });
     }
-  }
-
-
-  setupItems(items : any[], chars : CharacterPage)
-  {
-  this.items.push({
-    character : chars
-    });
   }
 
 

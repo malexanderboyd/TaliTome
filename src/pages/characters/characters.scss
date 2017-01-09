@@ -1,3 +1,30 @@
 page-characters {
+  .card-title {
+  font-size: 2.5em;
+  width: 100%;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Windlass', Arial;
+  -webkit-text-stroke-width: 0.0001em;
+  -webkit-text-stroke-color: white;
+    float:left;
+    margin: auto;
+  }
 
+
+  .charIcon {
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+    max-width: 125px;
+    height: 125px;
+    display: block;
+  }
+
+  .charDetails {
+    position: relative;
+  }
+  #cardContent {
+    display:flex;
+  }
 }
