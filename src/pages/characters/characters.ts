@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CharacterPage } from '../character/character';
-import { CharacterFilterPipe } from '../../app/pipes/character-filter.pipe';
+import { CharacterModalPage } from '../character-modal/character-modal';
+import { ModalController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-characters',
@@ -13,7 +14,7 @@ export class Characters {
   characters: CharacterPage[];
   items: Array<{character: CharacterPage}>;
   resetItems: Array<{character: CharacterPage}>; // used to reset items after filtering in search.
-  constructor() {
+  constructor(public characterModal: ModalController) {
 
     // Let's populate this page with character list
     let warrior = new CharacterPage("Warrior");
@@ -30,6 +31,7 @@ export class Characters {
     let sorceress = new CharacterPage("Sorceress");
     let thief = new CharacterPage("Thief");
     let troll = new CharacterPage("Troll");
+
     this.characters = [
     warrior,
     ghoul,
@@ -76,6 +78,12 @@ export class Characters {
     this.items = this.resetItems;
   }
 
+
+  showCharDetails(iName : string)
+  {
+    let charModal = this.characterModal.create(CharacterModalPage, { name : iName });
+    charModal.present();
+  }
 
 
 

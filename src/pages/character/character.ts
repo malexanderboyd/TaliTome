@@ -1,3 +1,13 @@
+
+import { Component } from '@angular/core';
+import { ModalController, NavParams } from 'ionic-angular';
+
+@Component({
+  selector: 'page-character',
+  templateUrl: 'character.html'
+})
+
+
 export class CharacterPage {
 str : number;
 craft : number;
@@ -10,6 +20,7 @@ starting : string;
 name : string;
 imgPath : string;
 basePath = "../assets/img/characters/";
+
   constructor(name : string) {
   this.name = name;
   switch (this.name)
@@ -218,9 +229,6 @@ basePath = "../assets/img/characters/";
 }
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CharacterPage');
-  }
 
   getStr()
   {
