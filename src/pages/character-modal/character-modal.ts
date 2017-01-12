@@ -12,11 +12,11 @@ import { CharacterPage } from '../character/character';
   templateUrl: 'character-modal.html'
 })
 export class CharacterModalPage {
-
-  champName : string;
+  champion : CharacterPage;
+  abilities : Array<{ability: string}>;
   constructor(public navCtrl: NavController, public navParams: NavParams, private viewCtrl: ViewController) {
-    let champion = new CharacterPage(navParams.get('name'));
-    this.champName = champion.getName();
+    this.champion = new CharacterPage(navParams.get('name'));
+    this.abilities = this.champion.getAbilities();
   }
 
 

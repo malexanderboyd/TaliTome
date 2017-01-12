@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{champName}} Details</ion-title>
+    <ion-title>{{champion.getName()}} Details</ion-title>
     <ion-buttons start>
    <button (click)="dismiss()">
      <i class="material-icons">clear</i>
@@ -19,5 +19,34 @@
 
 
 <ion-content padding>
-  Oh it's gonna be lit fam.
+  <ion-card style="height:100%;">
+     <ion-item>
+     <ion-avatar>
+       <img width="100%" height="100%" src="{{champion.getImgPath()}}">
+      </ion-avatar>
+    </ion-item>
+<ion-card-content>
+    Strength: {{ champion.getStr()}} <br/>
+
+    Life : {{ champion.getLife() }} <br/>
+
+    Fate: {{ champion.getFate()}} <br/>
+
+    Craft: {{ champion.getCraft()}} <br/>
+
+    Alignment: {{ champion.getAlignment() }}
+
+    <h2> Abilities </h2>
+    <ion-list>
+    <ion-item *ngFor="let ability of abilities" style="width:100%;">
+      {{ability.ability}}
+      <ion-list-header></ion-list-header>
+    </ion-item>
+  </ion-list>
+
+ <!-- Add card content here! -->
+</ion-card-content>
+
+</ion-card>
+
 </ion-content>

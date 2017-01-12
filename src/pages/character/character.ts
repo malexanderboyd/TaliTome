@@ -21,6 +21,8 @@ name : string;
 imgPath : string;
 basePath = "../assets/img/characters/";
 
+abilitiesFinal : Array<{ability: string}>;
+
   constructor(name : string) {
   this.name = name;
   switch (this.name)
@@ -239,6 +241,7 @@ basePath = "../assets/img/characters/";
   {
   return this.imgPath;
   }
+
   getName()
   {
     return this.name;
@@ -247,7 +250,15 @@ basePath = "../assets/img/characters/";
 
   getAbilities()
   {
-    return this.abilities;
+    this.abilitiesFinal = [];
+    for (let i = 0; i < this.abilities.length; i++)
+    {
+    this.abilitiesFinal.push({
+      ability : this.abilities[i],
+      });
+    }
+
+    return this.abilitiesFinal;
   }
 
   getStarting()
