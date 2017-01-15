@@ -12,7 +12,6 @@ export class Home {
   selectedItem: any;
   title: string[];
   items: Array<{title: string}>;
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
