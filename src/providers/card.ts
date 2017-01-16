@@ -6,6 +6,8 @@ export class Card {
 
   public name: string;
   public type: string;
+  public strength: string;
+  public subtype: string;
   public abilities: string[];
 
     constructor(cardName: string, cardType: string, cardAbility: string[]) {
@@ -28,4 +30,19 @@ export class Card {
     return this.abilities;
     }
 
+    getStrength()
+    {
+    if(this.strength != null)
+      return this.strength;
+    else
+      return "";
+    }
+
+    getSubType()
+    {
+    if(this.subtype != null)
+      return this.subtype;
+    else
+      return "";
+    }
 }
