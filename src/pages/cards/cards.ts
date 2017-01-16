@@ -106,6 +106,7 @@ let witch = new Card("Witch","Stranger",["A Witch lurks in this space for the re
 let wolf = new Card("Wolf","Enemy",["Sub Type: Animal","Strength: 2","A vicious Wolf now dwells in this area"," It will remain here until it is killed"]);
 let wraith = new Card("Wraith","Enemy",["Sub Type: Spirit","Craft: 5","A Wraith is wreaking havoc in this area"," It will remain until it is killed"]);
 
+// see cardGenerator.scala for .txt processing of cardScraper.py output ... could be done better
     this.items = [acquisition, alchemy, princess, alchemist, amulet, angel, ape, armour, axe, bag_of_gold, enemy, blizzard, book_of_spells, cave, cross, cursed_by_a_hag, demon,
     ghost,graveyard,giant,gnome,goblin,guide,healer,helmet,hermit,cursed_glade,hobgoblin,holy_grail,holy_lance,imp,tavern,lemure,stranger,magic_belt,magic_portal,city,place,magical_vortex,
     maiden,market,marsh,maze,mephistopheles,mercenary,mule,ogre,orb_of_knowledge,pestilence,phantom,pixie,poltergeist,pool_of_life,potion_of_strength,prince,raft,raiders,ring,runesword,serpent,shadow,shield,
