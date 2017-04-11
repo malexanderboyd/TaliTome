@@ -56,9 +56,84 @@ constructor(public navCtrl: NavController) {
 
   toggleSelected(ss: string)
   {
+    if(this.selected == null)
+    {
     this.selected = new CharacterPage(ss);
     console.info("selected");
     return 1;
+    }
+    else
+    {
+    this.selected = new CharacterPage(ss);
+    return 1;
+    }
   }
 
+
+  decreaseStat(stat: number)
+  {
+    switch(stat)
+    {
+    case 1: // strength
+      var currStr = document.getElementById('currentStr');
+      this.decUpdateValue(currStr);
+      break;
+    case 2: // craft
+      var currCraft = document.getElementById('currentCraft');
+      this.decUpdateValue(currCraft);
+      break;
+    case 3: // Life
+      var currLife = document.getElementById('currentLife');
+      this.decUpdateValue(currLife);
+      break;
+    case 4: // Fate
+      var currFate = document.getElementById('currentFate');
+      this.decUpdateValue(currFate);
+      break;
+    case 5: // Gold
+      var currGold = document.getElementById('currentGold');
+      this.decUpdateValue(currGold);
+      break;
+    }
+  }
+
+  decUpdateValue(currEle : any)
+  {
+    try
+    {
+      if(currEle != null)
+      {
+        var currVal = parseInt(currEle.innerHTML);
+        currVal -= 1;
+        if(currVal >= 0)
+          currEle.innerHTML = currVal.toString();
+          else
+          ; // no change (cannot go negitive)
+      }
+    }
+    catch(e)
+    {
+    console.log(e);
+    }
+  }
+
+  IncUpdateValue(currEle : any)
+  {
+    try
+    {
+      if(currEle != null)
+      {
+        var currVal = parseInt(currEle.innerHTML);
+        currVal += 1;
+        if(currVal >= 0)
+          currEle.innerHTML = currVal.toString();
+          else
+          ; // no change (cannot go negitive)
+      }
+    }
+    catch(e)
+    {
+    console.log(e);
+    }
+  }
 }

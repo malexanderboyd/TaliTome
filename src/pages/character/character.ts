@@ -19,7 +19,7 @@ alignment : string;
 starting : string;
 name : string;
 imgPath : string;
-basePath = "/assets/img/characters/";
+basePath = "  assets/img/characters/";
 
 abilitiesFinal : Array<{ability: string}>;
 

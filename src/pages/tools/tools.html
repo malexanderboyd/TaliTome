@@ -41,22 +41,22 @@
         </div>
         <div class="mdl-card__supporting-text">
           <p id="strCounter">
-          Strength: <ion-icon id="StrArrowDown" md="md-arrow-dropdown"></ion-icon> <span id="currentStr">{{ selected.getStr()}}</span> <ion-icon  id="StrArrowUp" md="md-arrow-dropup"></ion-icon> <br/>
+          Strength: <ion-icon (click)="decreaseStat(1)" md="md-arrow-dropdown"></ion-icon> <span id="currentStr">{{ selected.getStr()}}</span> <ion-icon  id="StrArrowUp" md="md-arrow-dropup"></ion-icon> <br/>
           </p>
           <p>
-          Craft: <ion-icon id="CraftArrowDown" md="md-arrow-dropdown"></ion-icon> <span id="currentCraft">{{ selected.getCraft()}}</span><ion-icon id="CraftArrowUp" md="md-arrow-dropup"></ion-icon> <br/>
+          Craft: <ion-icon (click)="decreaseStat(2)" md="md-arrow-dropdown"></ion-icon> <span id="currentCraft">{{ selected.getCraft()}}</span><ion-icon id="CraftArrowUp" md="md-arrow-dropup"></ion-icon> <br/>
           </p>
           <p>
-          Life : <ion-icon id="LifeArrowDown" md="md-arrow-dropdown"></ion-icon> <span id="currentLife">{{ selected.getLife() }}</span><ion-icon id="LifeArrowUp" md="md-arrow-dropup"></ion-icon> <br/>
+          Life : <ion-icon (click)="decreaseStat(3)" md="md-arrow-dropdown"></ion-icon> <span id="currentLife">{{ selected.getLife() }}</span><ion-icon id="LifeArrowUp" md="md-arrow-dropup"></ion-icon> <br/>
           </p>
           <p>
-          Fate: <ion-icon id="FateArrowDown" md="md-arrow-dropdown"></ion-icon> <span id="currentFate">{{ selected.getFate()}}</span><ion-icon id="FateArrowUp" md="md-arrow-dropup"></ion-icon> <br/>
+          Fate: <ion-icon (click)="decreaseStat(4)" md="md-arrow-dropdown"></ion-icon> <span id="currentFate">{{ selected.getFate()}}</span><ion-icon id="FateArrowUp" md="md-arrow-dropup"></ion-icon> <br/>
           </p>
           <p>
-          Gold : <ion-icon id="GoldArrowDown" md="md-arrow-dropdown"></ion-icon> <span id="currentGold">1</span><ion-icon id="GoldArrowDown" md="md-arrow-dropup"></ion-icon><br/>
+          Gold : <ion-icon (click)="decreaseStat(5)" md="md-arrow-dropdown"></ion-icon> <span id="currentGold">1</span><ion-icon id="GoldArrowDown" md="md-arrow-dropup"></ion-icon><br/>
           </p>
           <p>
-          Alignment: <span id="currentAlignment">{{ selected.getAlignment() }}</span> <ion-icon name="arrow-dropright"></ion-icon> <br/>
+          Alignment: <span id="currentAlignment">{{ selected.getAlignment() }}</span> <ion-icon (click)="changeAlignment(1)" name="arrow-dropright"></ion-icon> <br/>
         </div>
         <div class="mdl-card__actions mdl-card--border">
           <a  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
