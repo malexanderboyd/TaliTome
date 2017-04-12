@@ -70,29 +70,44 @@ constructor(public navCtrl: NavController) {
   }
 
 
-  decreaseStat(stat: number)
+  updateStat(stat: number, type: number)
   {
     switch(stat)
     {
     case 1: // strength
       var currStr = document.getElementById('currentStr');
+      if(type != 1)
       this.decUpdateValue(currStr);
+      else
+      this.IncUpdateValue(currStr);
       break;
     case 2: // craft
       var currCraft = document.getElementById('currentCraft');
+      if(type != 1)
       this.decUpdateValue(currCraft);
+      else
+      this.IncUpdateValue(currCraft);
       break;
     case 3: // Life
       var currLife = document.getElementById('currentLife');
+      if(type != 1)
       this.decUpdateValue(currLife);
+      else
+      this.IncUpdateValue(currLife);
       break;
     case 4: // Fate
       var currFate = document.getElementById('currentFate');
+      if(type != 1)
       this.decUpdateValue(currFate);
+      else
+      this.IncUpdateValue(currFate);
       break;
     case 5: // Gold
       var currGold = document.getElementById('currentGold');
+      if(type != 1)
       this.decUpdateValue(currGold);
+      else
+      this.IncUpdateValue(currGold);
       break;
     }
   }

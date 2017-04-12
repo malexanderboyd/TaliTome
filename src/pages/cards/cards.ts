@@ -108,9 +108,9 @@ let wraith = new Card("Wraith","Enemy",["Sub Type: Spirit","Craft: 5","A Wraith 
 
 // see cardGenerator.scala for .txt processing of cardScraper.py output ... could be done better
     this.items = [acquisition, alchemy, princess, alchemist, amulet, angel, ape, armour, axe, bag_of_gold, enemy, blizzard, book_of_spells, cave, cross, cursed_by_a_hag, demon,
-    ghost,graveyard,giant,gnome,goblin,guide,healer,helmet,hermit,cursed_glade,hobgoblin,holy_grail,holy_lance,imp,tavern,lemure,stranger,magic_belt,magic_portal,city,place,magical_vortex,
+    devil, dragon, enchanter, ghost,graveyard,giant,gnome,goblin,guide,healer,helmet,hermit,cursed_glade,hobgoblin,holy_grail,holy_lance,imp,tavern,lemure,stranger,magic_belt,magic_portal,city,place,magical_vortex,
     maiden,market,marsh,maze,mephistopheles,mercenary,mule,ogre,orb_of_knowledge,pestilence,phantom,pixie,poltergeist,pool_of_life,potion_of_strength,prince,raft,raiders,ring,runesword,serpent,shadow,shield,
-    shrine,gain_1_gold,siren,solomons_crown,sorcerer,spectre,storm,sword,two_bags_of_gold,unicorn,wand,water_bottle,wild_boar,witch,wraith,wolf,fountain_of_wisdom];
+    shrine,gain_1_gold,siren,solomons_crown,sorcerer,spectre,storm,sword,two_bags_of_gold,unicorn,wand,water_bottle,wild_boar,witch,wraith,wolf,fountain_of_wisdom,fairy, evil_darkness];
     this.resetItems = this.items;
   }
 
