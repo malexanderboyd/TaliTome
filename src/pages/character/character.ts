@@ -19,7 +19,7 @@ alignment : string;
 starting : string;
 name : string;
 imgPath : string;
-basePath = "  assets/img/characters/";
+basePath = "./assets/img/characters/";
 
 abilitiesFinal : Array<{ability: string}>;
 
@@ -37,7 +37,7 @@ abilitiesFinal : Array<{ability: string}>;
     "You may roll two dice in battle and use the higher attack roll to determine your attack score.",
     "You may use two Weapons at the same time."
     ];
-    this.imgPath = this.basePath + "warrior.png";
+    this.imgPath = this.basePath + "warrior.PNG";
     break;
 
   case "Ghoul":
@@ -51,7 +51,7 @@ abilitiesFinal : Array<{ability: string}>;
   "Whenever you defeat a character in psychic combat, if you choose to take one of his lives, add it to your own.",
   "When you kill an Enemy in battle, you may raise it from the dead and keep it as a Follower instead of a trophy. You may have one of your raised Followers add its Strength to yours for one battle, after which it disintegrates to the discard pile. You may only use one raised Follower per battle."
   ];
-  this.imgPath = this.basePath + "ghoul.png";
+  this.imgPath = this.basePath + "ghoul.PNG";
   break;
 
   case "Wizard":
@@ -65,7 +65,7 @@ abilitiesFinal : Array<{ability: string}>;
   "During the game, you always have at least one Spell. (Gain a Spell each time you cast your last Spell)",
   "When you attack another character, you may choose to make the attack psychic combat. You may not do this when you are attacked by another character."
   ];
-  this.imgPath = this.basePath + "wizard.png";
+  this.imgPath = this.basePath + "wizard.PNG";
   break;
 
   case "Assassin":
@@ -78,7 +78,7 @@ abilitiesFinal : Array<{ability: string}>;
   "You may assassinate when you attack a character or creature. You cannot assassinate when you are attacked by another character. When you assassinate, battle takes place as normal except that your victim may not roll a die to add to his Strength. If you win, you must force the loser to lose 1 life; you cannot take an Object or gold instead.",
   "You may not assassinate while at the Crown of Command."
   ];
-  this.imgPath = this.basePath + "assassin.png";
+  this.imgPath = this.basePath + "assassin.PNG";
   break;
 
   case "Druid":
@@ -92,7 +92,7 @@ abilitiesFinal : Array<{ability: string}>;
   "You may change your alignment at will. At any given time though, you can only be of one alignment. For example, if you are carrying the Runesword and you wish to pray at the Chapel, you must ditch the Runesword.",
   "Whenever you land on the Woods, you may gain your full complement of Spells, according to your current Craft."
   ];
-  this.imgPath = this.basePath + "druid.png";
+  this.imgPath = this.basePath + "druid.PNG";
   break;
 
   case "Dwarf":
@@ -109,7 +109,7 @@ abilitiesFinal : Array<{ability: string}>;
   "You need only roll 2 dice in the Mines.",
   "You are unaffected by the Maze."
   ];
-  this.imgPath = this.basePath + "dwarf.png";
+  this.imgPath = this.basePath + "dwarf.PNG";
   break;
 
   case "Elf":
@@ -123,7 +123,7 @@ abilitiesFinal : Array<{ability: string}>;
   "You may evade creatures and characters in the Woods.",
   "If you are on the Woods, instead of rolling the die for your move, you may move to any other Woods in the same Region."
   ];
-  this.imgPath = this.basePath + "elf.png";
+  this.imgPath = this.basePath + "elf.PNG";
   break;
 
   case "Minstrel":
@@ -137,7 +137,7 @@ abilitiesFinal : Array<{ability: string}>;
   "If you do not attack an Animal, you may attempt to charm it. To do so, roll 1 die: if you roll higher than the Animal's Strength, it joins you as a Follower and adds its Strength to yours in battle. You may only use one charmed Animal per battle.",
   "You may take the Maiden and Princess from a character you land on."
   ];
-  this.imgPath = this.basePath + "minstrel.png";
+  this.imgPath = this.basePath + "minstrel.PNG";
   break;
 
   case "Monk":
@@ -152,7 +152,7 @@ abilitiesFinal : Array<{ability: string}>;
   "After rolling the die when praying, you may add 1 to the score.",
   "You may not use any Weapon or Armour during battle."
   ];
-  this.imgPath = this.basePath + "monk.png";
+  this.imgPath = this.basePath + "monk.PNG";
   break;
 
   case "Priest":
@@ -168,7 +168,7 @@ abilitiesFinal : Array<{ability: string}>;
   "You may choose to automatically destroy any Spirits without resorting to psychic combat. When you destroy a Spirit in this manner, you may not keep the Enemy as a trophy but you may gain one Spell.",
   "You may not use any Weapon during battle."
   ];
-  this.imgPath = this.basePath + "priest.png";
+  this.imgPath = this.basePath + "priest.PNG";
   break;
 
   case "Prophetess":
@@ -184,7 +184,7 @@ abilitiesFinal : Array<{ability: string}>;
     "Whenever you have to draw Adventure Cards, you may discard one card of your choice that you do not wish to encounter and draw one more card to replace it, which you must encounter.",
     "At any time during the game, you may look at the Spell Cards held by other characters."
     ];
-    this.imgPath = this.basePath + "prophetess.png";
+    this.imgPath = this.basePath + "prophetess.PNG";
   break;
 
   case "Sorceress":
@@ -200,7 +200,7 @@ abilitiesFinal : Array<{ability: string}>;
   "You may attempt to beguile a character that you land on, allowing you to take one gold or Object of your choice. To do so, roll one die: you must roll a 6 to beguile a good character; 5 or 6 for a neutral character; or a 4, 5, or 6 for an evil character.",
   "You may take any one Follower, except the Maiden, Unicorn, or Princess from a character that you land on."
   ];
-  this.imgPath = this.basePath + "sorceress.png";
+  this.imgPath = this.basePath + "sorceress.PNG";
   break;
 
   case "Thief":
@@ -213,7 +213,7 @@ abilitiesFinal : Array<{ability: string}>;
   this.abilities = [ "You may take one gold or Object of your choice from a character that you land on.",
   "Whenever you visit the Market, Market Day, or Village you may take one card of your choice from the Purchase deck for free."
   ];
-  this.imgPath = this.basePath + "thief.png";
+  this.imgPath = this.basePath + "thief.PNG";
   break;
 
   case "Troll":
@@ -226,7 +226,7 @@ abilitiesFinal : Array<{ability: string}>;
   this.abilities = [ "You need not roll the die in the Crags unless you wish to. If you choose to roll, you must accept the result.",
   "Whenever you roll a 6 for your move, you may regenerate instead of moving. If you choose to regenerate, heal one life and your turn immediately ends."
   ];
-  this.imgPath = this.basePath + "troll.png";
+  this.imgPath = this.basePath + "troll.PNG";
   break;
 }
   }

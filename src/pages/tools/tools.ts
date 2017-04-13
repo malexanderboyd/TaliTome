@@ -10,8 +10,9 @@ export class Tools {
 characters: CharacterPage[];
 items: Array<{character: CharacterPage}>;
 selected : CharacterPage;
+alignmentCounter : number;
 constructor(public navCtrl: NavController) {
-
+  this.alignmentCounter = 0;
   this.selected = null;
 
   let warrior = new CharacterPage("Warrior");
@@ -69,6 +70,23 @@ constructor(public navCtrl: NavController) {
     }
   }
 
+  changeAlignment()
+  {
+    this.alignmentCounter = (this.alignmentCounter + 1) % 3;
+    var currAlignment = document.getElementById('currentAlignment');
+    switch(this.alignmentCounter)
+    {
+      case 0:
+        currAlignment.innerHTML = "Evil";
+        break;
+      case 1:
+        currAlignment.innerHTML = "Good";
+        break;
+      case 2:
+        currAlignment.innerHTML = "Neutral";
+        break;
+    }
+  }
 
   updateStat(stat: number, type: number)
   {
